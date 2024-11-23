@@ -1,0 +1,11 @@
+[Unit]
+Description=Raspberry Pi Fan Controller
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/rpifanctl
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
